@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
@@ -137,3 +137,5 @@ LOGGING = {
         }
     }
 }
+
+CELERY_BROKER_URL = 'redis://redis:6379/0'
